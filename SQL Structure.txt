@@ -1,0 +1,93 @@
+Catrgory
+ - id
+ - name
+
+Admin
+ - id
+ - username
+ - password
+ - name
+
+Customer
+ - id
+ - username
+ - password
+ - name
+ - email
+ - phone
+
+Service_Provider - Constructor/Designer/Supplier
+ - id
+ - username
+ - password
+ - name
+ - discription
+ - location (Distric)
+ - phone
+ - email
+ - is_available
+ - service_type (Constructor/Designer/Supplier)
+
+Constructor_Category
+ - id
+ - service_provider_id
+ - category_id
+
+Counstructor_Booking
+ - id
+ - customer_id
+ - service_provider_id
+ - description
+ - accepted
+ - from
+ - to
+ - estimation
+ - advance_payed
+ - job_status
+ - rating
+ - feedback
+
+Material
+ - id
+ - service_provider_id
+ - material_type
+ - unit_price
+ - description
+ - is_available
+
+Material_Order
+ - id
+ - customer_id
+ - service_provider_id
+ - material_id
+ - quntity
+ - accepted
+ - advance_payed
+ - job_status
+ - rating
+ - feedback
+
+Packages
+ - id
+ - name
+ - description
+ - unit_price
+
+Package_Providers
+ - id
+ - package_id
+ - service_provider_id
+
+News
+ - id
+ - title
+ - discription
+
+Chat
+ - id
+ - customer_id
+ - service_provider_id
+ - message
+ - date_time
+ - is_customer_to_service_provider
+ - seen
